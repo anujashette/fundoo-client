@@ -17,7 +17,6 @@ class ArchiveComponent extends Component {
         let archiveData = { noteId: this.props.id }
         updateArchive(archiveData)
             .then(async (response) => {
-                console.log('archive note', response)
                 this.props.changeDisplay()
                 // await this.props.handleGetNotes()
             })
